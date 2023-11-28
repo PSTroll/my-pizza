@@ -3,3 +3,8 @@ export type FavouritesCardType = {
   content: string;
   imageSrc: string;
 };
+
+export type FavouritesFullCardType = {
+  title: string;
+  content: string;
+};
