@@ -28,6 +28,6 @@ export const recipes = [
     title: "Pizza Capricciosa",
     description:
       "Capricciosa pizza is a delightful Italian creation that's known for its diverse and colorful toppings, offering a medley of flavors in every slice. The name 'capricciosa' translates to 'capricious' or 'whimsical' in Italian, and this pizza lives up to its name with its varied ingredients. Typically, a Capricciosa pizza features a traditional pizza dough base, topped with a rich tomato sauce.",
-    imageSrc: "images/recipes/capricciosa.jpg",
+    imageSrc: "/images/recipes/capricciosa.jpg",
   },
 ];

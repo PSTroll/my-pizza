@@ -17,6 +17,7 @@ const FavouriteRecipes = () => {
         <FavouritesFullCard
           title={recipes[2].title}
           content={recipes[2].description}
+          imageSrc={recipes[2].imageSrc}
         />
       </div>
       <div>
@@ -30,6 +31,7 @@ const FavouriteRecipes = () => {
         <FavouritesFullCard
           title={recipes[3].title}
           content={recipes[3].description}
+          imageSrc={recipes[3].imageSrc}
         />
       </div>
     </div>

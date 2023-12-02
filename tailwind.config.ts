@@ -15,7 +15,13 @@ const config: Config = {
         capricciosa: "url(/images/recipes/capricciosa.jpg)",
       },
       colors: {
-        heroText: "",
+        primary: "#DC2626",
+      },
+      keyframes: {
+        appear: {
+          "0%": { transform: "opacity: 0" },
+          "100%": { transform: "opacity: 100" },
+        },
       },
     },
   },

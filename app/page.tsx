@@ -2,10 +2,10 @@ import { FavouriteRecipes } from "@/components";
 
 export default function Home() {
   return (
-    <main className="w-full relative -z-10 top-[-116px] flex flex-col items-center">
+    <main className="w-full relative flex flex-col items-center">
       <div className="bg-hero-image bg-cover w-full h-[540px] md:rounded-b-full">
         <div className="h-full flex justify-center items-center">
-          <h1 className="text-6xl sm:text-7xl text-center font-light max-lg:text-center px-2 text-white bg-opacity-30 lg:p-5 bg-black rounded-lg">
+          <h1 className="md:text-6xl sm:text-5xl text-4xl font-light max-lg:text-center sm:px-2 text-white bg-opacity-60 bg-black rounded-lg">
             MY FAVORITE PIZZA RECIPES
           </h1>
         </div>
