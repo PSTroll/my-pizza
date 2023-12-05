@@ -1,13 +1,17 @@
-import React from "react";
-
-import { FadeInComponent, Search } from "..";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
+import { FadeInComponent, Search } from "..";
+import { pizzaProducts } from "@/constants";
+
 const ShopElement = () => {
+  const [search, setSearch] = useState<string>("");
+
   return (
     <div className="flex w-full flex-col items-center mx-1">
       <div className="flex w-full justify-center">
-        <Search />
+        <Search changeSearch={setSearch} search={search} />
         <FadeInComponent>
           <Image
             src="/images/icons/filter.svg"
@@ -18,7 +22,7 @@ const ShopElement = () => {
           />
         </FadeInComponent>
       </div>
-      <div></div>
+      <div>{search}</div>
     </div>
   );
 };

@@ -31,3 +31,48 @@ export const recipes = [
     imageSrc: "/images/recipes/capricciosa.jpg",
   },
 ];
+
+export const pizzaProducts = [
+  {
+    id: 1,
+    name: "Pizza Stone or Baking Steel",
+    description: "Helps achieve a crispy crust by evenly distributing heat.",
+    price: 25.99,
+  },
+  {
+    id: 2,
+    name: "Pizza Peel",
+    description: "Essential for transferring pizzas in and out of the oven.",
+    price: 18.49,
+  },
+  {
+    id: 3,
+    name: "Pizza Cutter or Wheel",
+    description: "A sharp, sturdy cutter for slicing pizzas.",
+    price: 12.99,
+  },
+  {
+    id: 4,
+    name: "Pizza Dough Roller",
+    description: "Helps in achieving an even and thin pizza crust.",
+    price: 14.99,
+  },
+  {
+    id: 5,
+    name: "Pizza Pan or Tray",
+    description: "Ideal for baking pan pizzas.",
+    price: 20.59,
+  },
+  {
+    id: 6,
+    name: "Pizza Sauce Spreader",
+    description: "Ensures an even spread of sauce on the dough.",
+    price: 8.99,
+  },
+  {
+    id: 7,
+    name: "Cheese Grater/Shredder",
+    description: "For freshly grated cheese on top of your pizza.",
+    price: 10.49,
+  },
+];

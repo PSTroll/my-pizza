@@ -3,3 +3,8 @@ export type FavouritesCardType = {
   content: string;
   imageSrc: string;
 };
+
+export type SearchProps = {
+  changeSearch: React.Dispatch<React.SetStateAction<string>>;
+  search: string;
+};

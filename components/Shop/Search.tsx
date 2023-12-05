@@ -1,8 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import { ExpandingComponent } from "..";
 
-const Search = () => {
+import { ExpandingComponent } from "..";
+import { SearchProps } from "@/types";
+
+const Search: React.FC<SearchProps> = ({ changeSearch, search }) => {
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    changeSearch(e.target.value);
+  };
+
   return (
     <ExpandingComponent>
       <div className="flex items-center w-full">
@@ -17,6 +23,8 @@ const Search = () => {
           type="text"
           placeholder="Enter a product name..."
           className="bg-slate-600 h-12 rounded-3xl p-2 py-8 pl-12 text-white text-lg outline-none sm:w-[450px] md:w-[600px]"
+          onChange={onChangeHandler}
+          value={search}
         />
       </div>
     </ExpandingComponent>
