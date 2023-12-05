@@ -10,6 +10,9 @@ import AboutCard from "./About/AboutCard";
 import { MotionDiv } from "./UI/MotionDiv";
 import AppearingComponent from "./Animations/AppearingComponent";
 import ExpandingComponent from "./Animations/ExpandingComponent";
+import ShopElement from "./Shop/ShopElement";
+import Search from "./Shop/Search";
+import FadeInComponent from "./Animations/FadeInComponent";
 
 export {
   Header,
@@ -24,4 +27,7 @@ export {
   MotionDiv,
   AppearingComponent,
   ExpandingComponent,
+  ShopElement,
+  Search,
+  FadeInComponent,
 };

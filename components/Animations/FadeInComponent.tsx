@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 import { MotionDiv } from "..";
 
-const ExpandingComponent: React.FC<{ children: React.ReactNode }> = ({
+const FadeInComponent: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const controls = useAnimation();
@@ -14,11 +14,9 @@ const ExpandingComponent: React.FC<{ children: React.ReactNode }> = ({
   const variants = {
     hidden: {
       opacity: 0,
-      transform: "translateX(-50px)",
     },
     visible: {
       opacity: 100,
-      transform: "translateX(0px)",
     },
   };
 
@@ -35,9 +33,9 @@ const ExpandingComponent: React.FC<{ children: React.ReactNode }> = ({
       animate={controls}
       initial="hidden"
       transition={{
-        delay: 0,
+        delay: 0.1,
         ease: "easeInOut",
-        duration: 0.6,
+        duration: 0.8,
       }}
       viewport={{ amount: 0 }}
     >
@@ -46,4 +44,4 @@ const ExpandingComponent: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-export default ExpandingComponent;
+export default FadeInComponent;
