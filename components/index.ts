@@ -8,6 +8,8 @@ import Footer from "./UI/Footer";
 import ContactCard from "./Contact/ContactCard";
 import AboutCard from "./About/AboutCard";
 import { MotionDiv } from "./UI/MotionDiv";
+import AppearingComponent from "./Animations/AppearingComponent";
+import ExpandingComponent from "./Animations/ExpandingComponent";
 
 export {
   Header,
@@ -20,4 +22,6 @@ export {
   ContactCard,
   AboutCard,
   MotionDiv,
+  AppearingComponent,
+  ExpandingComponent,
 };
