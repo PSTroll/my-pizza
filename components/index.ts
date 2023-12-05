@@ -13,6 +13,7 @@ import ExpandingComponent from "./Animations/ExpandingComponent";
 import ShopElement from "./Shop/ShopElement";
 import Search from "./Shop/Search";
 import FadeInComponent from "./Animations/FadeInComponent";
+import FilteredList from "./Shop/FilteredList";
 
 export {
   Header,
@@ -30,4 +31,5 @@ export {
   ShopElement,
   Search,
   FadeInComponent,
+  FilteredList,
 };

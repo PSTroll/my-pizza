@@ -1,12 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import { FadeInComponent, Search } from "..";
+import { FadeInComponent, FilteredList, Search } from "..";
 import { pizzaProducts } from "@/constants";
+import { ProductsType } from "@/types";
 
 const ShopElement = () => {
   const [search, setSearch] = useState<string>("");
+  const [filteredList, setFilteredList] =
+    useState<ProductsType[]>(pizzaProducts);
+
+  useEffect(() => {
+    setFilteredList(
+      pizzaProducts.filter((item) =>
+        item.name.trim().toLowerCase().includes(search.trim().toLowerCase())
+      )
+    );
+  }, [search]);
 
   return (
     <div className="flex w-full flex-col items-center mx-1">
@@ -22,7 +33,9 @@ const ShopElement = () => {
           />
         </FadeInComponent>
       </div>
-      <div>{search}</div>
+      <div className="text-white">
+        <FilteredList filteredList={filteredList} />
+      </div>
     </div>
   );
 };
